@@ -1,0 +1,556 @@
+/* =========================
+   PREMIUM MODERN UI
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef3f9;
+overflow-x:hidden;
+color:#222;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar{
+background:linear-gradient(90deg,#001f4d,#003b95);
+color:white;
+padding:10px 0;
+font-size:14px;
+font-weight:500;
+}
+
+/* =========================
+   HEADER
+========================= */
+<style>
+.alumni-wrapper{
+max-width:900px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* FIXED BUTTON STYLE */
+.alumni-btn{
+display:block;
+width:100%;
+padding:15px;
+margin:12px 0;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register{ background:#8b0000; }
+.login{ background:#005eff; }
+.report{ background:#28a745; }
+
+.alumni-btn:hover{
+transform:scale(1.02);
+opacity:0.9;
+}
+</style>
+.main-header{
+background:white;
+padding:18px 0;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+position:relative;
+z-index:999;
+}
+
+.logo{
+width:90px;
+transition:0.3s;
+}
+
+.logo:hover{
+transform:scale(1.05);
+}
+
+.college-title h1{
+font-size:34px;
+font-weight:800;
+color:#001f4d;
+margin-bottom:5px;
+}
+
+.college-title p{
+font-size:15px;
+color:#666;
+margin:0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar{
+background:linear-gradient(90deg,#8b0000,#c40000);
+padding:0;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.custom-navbar .nav-link{
+color:white !important;
+padding:18px 22px !important;
+font-weight:500;
+position:relative;
+transition:0.3s;
+}
+
+.custom-navbar .nav-link::after{
+content:'';
+position:absolute;
+left:50%;
+bottom:8px;
+width:0;
+height:2px;
+background:white;
+transition:0.3s;
+transform:translateX(-50%);
+}
+
+.custom-navbar .nav-link:hover::after{
+width:60%;
+}
+
+.custom-navbar .nav-link:hover{
+background:rgba(255,255,255,0.1);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-slider{
+position:relative;
+overflow:hidden;
+}
+
+.hero-slider img{
+height:750px;
+object-fit:cover;
+filter:brightness(70%);
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:10;
+text-align:center;
+color:white;
+width:100%;
+padding:20px;
+animation:fadeIn 1.5s ease;
+}
+
+.hero-content h1{
+font-size:75px;
+font-weight:800;
+text-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+.hero-content p{
+font-size:25px;
+margin-top:15px;
+font-weight:300;
+}
+
+.hero-btn{
+margin-top:25px;
+padding:15px 40px;
+border:none;
+background:linear-gradient(90deg,#ff512f,#dd2476);
+color:white;
+font-size:18px;
+font-weight:600;
+border-radius:50px;
+transition:0.4s;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:42px;
+font-weight:800;
+color:#001f4d;
+position:relative;
+display:inline-block;
+}
+
+.section-title h2::after{
+content:'';
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:-10px;
+width:80px;
+height:4px;
+background:#c40000;
+border-radius:5px;
+}
+
+/* =========================
+   NOTICE CARDS
+========================= */
+
+.notice-section{
+padding:90px 0;
+}
+
+.notice-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+transition:0.4s;
+height:100%;
+}
+
+.notice-card:hover{
+transform:translateY(-10px);
+}
+
+.notice-card h2{
+font-size:28px;
+font-weight:700;
+color:#001f4d;
+margin-bottom:25px;
+}
+
+.notice-card ul{
+padding-left:20px;
+}
+
+.notice-card ul li{
+margin-bottom:18px;
+font-size:16px;
+color:#555;
+}
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.info-section{
+padding-bottom:100px;
+}
+
+.info-card{
+background:white;
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+transition:0.4s;
+height:100%;
+position:relative;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.info-card::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:linear-gradient(90deg,#ff512f,#dd2476);
+}
+
+.info-card:hover{
+transform:translateY(-12px);
+}
+
+.info-card h3{
+margin-top:20px;
+font-size:26px;
+font-weight:700;
+color:#001f4d;
+}
+
+.info-card p{
+margin-top:15px;
+font-size:15px;
+line-height:1.8;
+color:#666;
+}
+
+/* =========================
+   DEPARTMENT CARDS
+========================= */
+
+.dept-card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+transition:0.4s;
+cursor:pointer;
+height:100%;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.dept-card:hover{
+transform:translateY(-12px);
+}
+
+.dept-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.dept-card:hover img{
+transform:scale(1.08);
+}
+
+.dept-content{
+padding:25px;
+text-align:center;
+}
+
+.dept-content h3{
+font-size:28px;
+font-weight:700;
+color:#001f4d;
+}
+
+.dept-content p{
+font-size:15px;
+margin-top:10px;
+line-height:1.8;
+color:#666;
+}
+
+.dept-btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:linear-gradient(90deg,#ff512f,#dd2476);
+color:white;
+font-weight:600;
+border-radius:50px;
+transition:0.4s;
+}
+
+.dept-btn:hover{
+transform:translateY(-4px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+background:#00152d;
+color:white;
+padding:80px 0 25px;
+margin-top:80px;
+}
+
+.footer h4{
+font-size:24px;
+margin-bottom:25px;
+font-weight:700;
+}
+
+.footer p,
+.footer a{
+color:#ccc;
+font-size:15px;
+line-height:2;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer a:hover{
+color:white;
+padding-left:5px;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,0.1);
+color:#aaa;
+font-size:14px;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translate(-50%,-40%);
+}
+
+100%{
+opacity:1;
+transform:translate(-50%,-50%);
+}
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+
+.hero-slider img{
+    height:500px;
+    object-fit:cover;
+    }
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.college-title h1{
+font-size:24px;
+}
+
+.custom-navbar .nav-link{
+text-align:center;
+}
+
+.notice-card,
+.info-card{
+padding:25px;
+}
+
+}
+/* TIMETABLE HERO */
+
+.timetable-hero{
+    position:relative;
+    height:420px;
+    background:url('../images/timetable.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    
+    .timetable-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    }
+    
+    .timetable-content{
+    position:relative;
+    z-index:10;
+    text-align:center;
+    color:white;
+    }
+    
+    .timetable-content h1{
+    font-size:65px;
+    font-weight:700;
+    }
+    
+    .timetable-content p{
+    font-size:22px;
+    margin-top:10px;
+    }
+    
+    /* SECTION */
+    
+    .timetable-section{
+    padding:90px 0;
+    background:#f5f7fb;
+    }
+    
+    .timetable-card{
+    background:white;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    }
+    
+    .timetable-card h2{
+    font-weight:700;
+    color:#001f4d;
+    }
+    
+    .form-label{
+    font-weight:600;
+    margin-bottom:8px;
+    }
+    
+    .form-select{
+    padding:14px;
+    border-radius:12px;
+    }
+    
+    .timetable-btn{
+    padding:14px 40px;
+    border:none;
+    background:linear-gradient(90deg,#8b0000,#c40000);
+    color:white;
+    font-weight:600;
+    border-radius:50px;
+    transition:0.3s;
+    }
+    
+    .timetable-btn:hover{
+    transform:translateY(-3px);
+    }
+    
+    /* PREVIEW */
+    
+    .timetable-preview{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+    
+    .timetable-preview h3{
+    font-weight:700;
+    color:#001f4d;
+    }
